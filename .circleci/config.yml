@@ -5,7 +5,7 @@ jobs:
       - image: cimg/ruby:2.6.8
         auth:
           username: png07
-          password: $DOCKERHUB_PASSWORD
+          password: pratikng@2002
 steps:
   - checkout
   - run: echo "A first hello" 
@@ -13,9 +13,9 @@ steps:
 two:
   docker:
     - image: cimg/ruby:3.0.2
-  auth:
-    username: mydockerhub-user
-    password: $DOCKERHUB_PASSWORD
+      auth:
+        username: png07
+        password: pratikng@2002
  steps:
   - checkout
   - run: echo "A more familiar hello" 
